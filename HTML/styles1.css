@@ -1,0 +1,28 @@
+html{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("source/civilcanteenbg.jpg");
+
+    
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+header{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
+    font-family:'Times New Roman', Times, serif;
+}
+.main{
+    font-family: helvetica;
+    text-align: left;
+    position: relative;
+    margin-top: auto;
+    color: white;
+}
+img{
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    width: 48%;
+}
