@@ -1,10 +1,20 @@
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <head>
-    
+    <title>Today's Special</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="source/CCicon.ico">
+</head>
     <style>
+        body {
+            background-image: url("source/background-image-sp1.jpg");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+            }
+        
         .container {
-            position: relative;
+            position:relative;
             text-align: center;
             color: white;
         }
@@ -14,41 +24,60 @@
         .centered {
             position: absolute;
             top: 50%;
-            left: 50%;
+            left:75%;
             transform: translate(-50%, -50%);
+        }
+
+        #homebt {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            border: none;
+            outline: none;
+            position: absolute;
+            top: 90%;
+            left: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            font-weight: 800;
+            background-color: white;
+            box-shadow: inset 0 0 0 0 white;
+            transition: ease-in-out 0.3s;
+        }
+
+            #homebt:hover {
+                box-shadow: inset 50px 0 0 0 #ffd540;
+            }
+
+        .text {
+            font-family: Montserrat,sans-serif;
+            font-weight:900;
+            font-size:5vw;
         }
        
     </style>
     
-</head>
+
 <body>
-    <h2 style="font-family: times new roman;
-        font-size: 50px;
-        text-align: center;
-        color: Tomato;">
-        TODAY'S SPECIAL!
+    
 
-    </h2>
-
-    <div class="container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjrfovG7l5Fi_OkJXZDs3s5gfFf6wpnmR2Yg&usqp=CAU" alt="Board" style="width:70%;height:60%;">
-
-        <div class="centered" style="font-size: 45px;
-        font-family: 'Trebuchet MS';">
-            -Hot hot nescafe..
-            <br />-sizzling uzhunnuvadas and parippuvadas..
-            <br />-creamy chocolate milkshake!!<br />
+        
+        <div class="centered" style="font-size: 45px;font-family: Montserrat; font-weight:800;">
+            <ul>
+            <li>Hot hot nescafe.</li>
+            <li>Sizzling uzhunnuvadas and parippuvadas.</li>
+            <li>Creamy chocolate milkshake!</li>
+                </ul>
         </div>
 
 
-    </div>
+    
     <p style="font-size: 25px;
-    font-family: Georgia, serif;
+    font-family: Montserrat, serif;
     color: black;text-align:right"><b>Combo offer<br /> By two samosa get one lime freee!</b></p>
-    <a href="http://programminghead.com">
-        <button style="color:black;font-size:20px;background-color:antiquewhite"><b>HOME PAGE!</b></button>
-    </a>
-   
+    <form method="get" action="index.html">
+        <button id="homebt" type="submit">HOME</button>
+    </form>
 
 
 </body>
